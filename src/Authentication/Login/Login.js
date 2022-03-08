@@ -46,7 +46,7 @@ function Login() {
 
       window.localStorage.setItem("TokenValue",res.data.token);
       alert("You have Succesfully logged in");
-      navigate('/appointments');
+      navigate('/find_doc');
   })
   .catch(err=>{
       console.log("Axios Error :",err);
@@ -56,7 +56,7 @@ function Login() {
 
   return (
      <div className='reg_page'>
-         <img src='../../../../image/back.jpg' width={1365} height={585} />
+         <img src='../../../../image/back.jpg' alt='background img' width={1365} height={585} />
     
          <div className='log'>
            <form className='logform' onSubmit={formik.handleSubmit}>

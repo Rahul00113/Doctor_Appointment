@@ -1,7 +1,7 @@
 import React from 'react'
 import {Carousel,Container,Row,Col, Button} from 'react-bootstrap'
 import './Home.scss'
-import { Link, useNavigate } from 'react-router-dom'
+import {  useNavigate } from 'react-router-dom'
 import Footer from '../../Layout/Footer'
 
 
@@ -17,7 +17,7 @@ function Home() {
     <div className='myhome'>
       <div>
    
-        <img src='../../../../image/home1.jpg' className='w-100' height={400}/>
+        <img src='../../../../image/home1.jpg' alt='home' className='w-100' height={400}/>
     
       <div className='home_text1'>
         <h4 className='home_text2'>Welcome to Medical Hospital</h4>
@@ -80,7 +80,51 @@ About Us
 <Button onClick={Navi_about}>Find Out More</Button>
 </Col>
 <Col>
-<img src='../../../../image/Dr-K.C-Das.jpg' width={480}/>
+{/* <img src='../../../../image/doctor4.jpg' width={460}/> */}
+<Carousel variant="dark" className="caro">
+  <Carousel.Item>
+    <img
+      className="d-block home_caro"
+      src="../../../../image/Dr-K.C-Das.jpg"
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block home_caro"
+      src="../../../../image/doctor2.jpg"
+      alt="Second slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block home_caro"
+      src="../../../../image/doctor3.jpeg"
+      alt="Third slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block home_caro"
+      src="../../../../image/doctor4.jpg"
+      alt="Forth slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block home_caro"
+      src="../../../../image/doctor5.jpg"
+      alt="Fifth slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block home_caro"
+      src="../../../../image/doctor6.jpg"
+      alt="Sixth slide"
+    />
+  </Carousel.Item>
+</Carousel>
 </Col>
   </Row>
   </Container><br/>

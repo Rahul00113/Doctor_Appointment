@@ -9,10 +9,7 @@ function Footer() {
   const Navi_appli=()=>{
   navigate('/registration')
   };
-  const loggingOut=()=>{
-    window.localStorage.clear();
-    navigate('/')
-  }
+  
 
   return (
     <div className='myfooter'>
@@ -27,7 +24,7 @@ function Footer() {
 
      
       <div className="col foot_img ">
-      <img src='../../../image/logo4.jpg'  height={110} /><br/> <br/>
+      <img src='../../../image/logo4.jpg' alt='logo' height={110} /><br/> <br/>
       <p className='foot_p'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
   
@@ -67,9 +64,9 @@ function Footer() {
           </li><br />
           <li>
             <Button onClick={Navi_appli} className='butn1'>Make An Appointment</Button>
-            {/* <Button type='Submit' onClick={loggingOut} >Logout</Button> */}
+     
           </li><br/>
-          <li > <Button type='Submit' onClick={loggingOut} className='butn2'>Logout</Button></li>
+         
         </ul>
 
       </div>
@@ -84,7 +81,7 @@ function Footer() {
 
 
   <div className="footer-copyright text-center py-3 myfot_text">© 2020 Copyright:
-    <a > Medical Hospital</a>
+    <a href='/' > Medical Hospital</a>
   </div>
 
 
